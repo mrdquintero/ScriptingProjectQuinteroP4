@@ -4,25 +4,35 @@ using UnityEngine;
 
 public class VariablesAndFunctions : MonoBehaviour
 {
-    //Created a variable and set its value
-    int myInt = 12;
+    //create my integer variable
+    public int myInt = 5;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        //run my variable thru my function
         myInt = MultiplyByTwo(myInt);
         Debug.Log(myInt);
     }
-
-    //Creating a multiply function
-    int MultiplyByTwo(int number)
-    {
-        int result;
-        result = number * 2;
-        return result;
-    }
+       
     // Update is called once per frame
     void Update()
     {
+
     }
+
+    //create the multibly by two function
+    int MultiplyByTwo(int number)
+    {
+        //create a local variable
+        int result;
+
+        //multiplying the num,ber by two
+        result = number * 2;
+
+        //return the value
+        return result;
+    }
+
 }
